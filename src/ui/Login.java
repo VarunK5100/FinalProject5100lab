@@ -4,7 +4,9 @@
  */
 package ui;
 
+import java.awt.CardLayout;
 import javax.swing.JPanel;
+import model.CustomerManager;
 
 /**
  *
@@ -40,7 +42,12 @@ public class Login extends javax.swing.JPanel {
 
         pwdLabel.setText("password");
 
-        loginButton.setText("jButton1");
+        loginButton.setText("Login");
+        loginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -78,6 +85,17 @@ public class Login extends javax.swing.JPanel {
                 .addContainerGap(214, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
+        // TODO add your handling code here:
+        /*CustomerManager newCustomerManager=new CustomerManager();
+        CustomerManagerPanel newPanel=new CustomerManagerPanel(newCustomerManager);
+        // SplitPane.setBottomComponent(newFormPanel);
+        newCustomerManager
+        //bottomPanel.add(newFormPanel);
+        CardLayout layout = (CardLayout) bottomPanel.getLayout();
+        layout.next(bottomPanel);*/
+    }//GEN-LAST:event_loginButtonActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

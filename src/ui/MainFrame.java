@@ -18,9 +18,9 @@ public class MainFrame extends javax.swing.JFrame {
     public MainFrame() {
         initComponents();
                     
-                Login loginPanel = new Login(bottomPanel);
+        CustomerManagerPanel customermManagerPanel = new CustomerManagerPanel(bottomPanel);
         CardLayout layout = (CardLayout) bottomPanel.getLayout();
-        bottomPanel.add(loginPanel);
+        bottomPanel.add(customermManagerPanel);
         layout.next(bottomPanel);
 
     }
